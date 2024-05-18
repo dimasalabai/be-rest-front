@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/be-rest-front/static/css/main.51e68000.css",
+    "main.js": "/be-rest-front/static/js/main.a8f3389f.js",
+    "static/css/418.9e65219e.chunk.css": "/be-rest-front/static/css/418.9e65219e.chunk.css",
+    "static/js/418.16e9b998.chunk.js": "/be-rest-front/static/js/418.16e9b998.chunk.js",
+    "static/css/19.b0729dc2.chunk.css": "/be-rest-front/static/css/19.b0729dc2.chunk.css",
+    "static/js/19.997ddaf7.chunk.js": "/be-rest-front/static/js/19.997ddaf7.chunk.js",
+    "static/css/358.e3968c2d.chunk.css": "/be-rest-front/static/css/358.e3968c2d.chunk.css",
+    "static/js/358.5fd2dc3f.chunk.js": "/be-rest-front/static/js/358.5fd2dc3f.chunk.js",
+    "static/css/754.bf10170d.chunk.css": "/be-rest-front/static/css/754.bf10170d.chunk.css",
+    "static/js/754.6d4e3ba4.chunk.js": "/be-rest-front/static/js/754.6d4e3ba4.chunk.js",
+    "static/css/554.fd585800.chunk.css": "/be-rest-front/static/css/554.fd585800.chunk.css",
+    "static/js/554.5fb40e86.chunk.js": "/be-rest-front/static/js/554.5fb40e86.chunk.js",
+    "static/css/544.9e9c391f.chunk.css": "/be-rest-front/static/css/544.9e9c391f.chunk.css",
+    "index.html": "/be-rest-front/index.html",
+    "main.51e68000.css.map": "/be-rest-front/static/css/main.51e68000.css.map",
+    "main.a8f3389f.js.map": "/be-rest-front/static/js/main.a8f3389f.js.map",
+    "418.9e65219e.chunk.css.map": "/be-rest-front/static/css/418.9e65219e.chunk.css.map",
+    "418.16e9b998.chunk.js.map": "/be-rest-front/static/js/418.16e9b998.chunk.js.map",
+    "19.b0729dc2.chunk.css.map": "/be-rest-front/static/css/19.b0729dc2.chunk.css.map",
+    "19.997ddaf7.chunk.js.map": "/be-rest-front/static/js/19.997ddaf7.chunk.js.map",
+    "358.e3968c2d.chunk.css.map": "/be-rest-front/static/css/358.e3968c2d.chunk.css.map",
+    "358.5fd2dc3f.chunk.js.map": "/be-rest-front/static/js/358.5fd2dc3f.chunk.js.map",
+    "754.bf10170d.chunk.css.map": "/be-rest-front/static/css/754.bf10170d.chunk.css.map",
+    "754.6d4e3ba4.chunk.js.map": "/be-rest-front/static/js/754.6d4e3ba4.chunk.js.map",
+    "554.fd585800.chunk.css.map": "/be-rest-front/static/css/554.fd585800.chunk.css.map",
+    "554.5fb40e86.chunk.js.map": "/be-rest-front/static/js/554.5fb40e86.chunk.js.map",
+    "544.9e9c391f.chunk.css.map": "/be-rest-front/static/css/544.9e9c391f.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/css/main.51e68000.css",
+    "static/js/main.a8f3389f.js"
+  ]
+}
