@@ -38,39 +38,44 @@ const RegisterForm = ({ onSubmit }) => {
   return (
     <form onSubmit={handleSubmit}>
       <div className={styles.block}>
-        <label htmlFor={nameId}>Name:</label>
         <input
+          className={styles.input}
           value={name}
           onChange={handleChange}
           type="text"
           name="name"
           id={nameId}
+          placeholder="Enter your name"
           required
         />
       </div>
       <div className={styles.block}>
-        <label htmlFor={emailId}>Email:</label>
         <input
+          className={styles.input}
           value={email}
           onChange={handleChange}
           type="email"
           name="email"
           id={emailId}
+          placeholder="Enter your email"
           required
         />
       </div>
       <div className={styles.block}>
-        <label htmlFor={passwordId}>Password:</label>
         <input
+          className={styles.input}
           value={password}
           onChange={handleChange}
           type="password"
           name="password"
           id={passwordId}
+          placeholder="Confirm a password"
           required
         />
       </div>
-      <button type="submit">Register</button>
+      <button type="submit" className={styles.btnRegister}>
+        Register
+      </button>
     </form>
   );
 };

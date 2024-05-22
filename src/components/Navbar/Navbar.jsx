@@ -15,7 +15,9 @@ const Navbar = () => {
 
   return (
     <nav className={style.navbar}>
-      <Link to="/">Logo</Link>
+      <Link to="/" className={style.logo}>
+        <span>Be</span>Rest
+      </Link>
       <MainMenu />
 
       {isLogin ? <NavbarUser /> : <NavbarAuth />}

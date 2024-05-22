@@ -10,10 +10,8 @@ import {
   selectAuthLoading,
 } from '../../redux/auth/auth-selectors';
 
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
 import styles from './register-page.module.css';
+import AuthWrapper from 'shared/components/AuthWrapper/AuthWrapper';
 
 const RegisterPage = () => {
   const authLoading = useSelector(selectAuthLoading);
@@ -27,12 +25,12 @@ const RegisterPage = () => {
   };
 
   return (
-    <main>
-      <h1 className={styles.title}>Please Sign up</h1>
-      {authLoading && <Loader />}
-      <RegisterForm onSubmit={handleSignup} />
+    <main className={styles.main}>
+      <AuthWrapper title={'Please Sign up'}>
+        {authLoading && <Loader />}
+        <RegisterForm onSubmit={handleSignup} />
+      </AuthWrapper>
       {/* {authError && <p>{authError}</p>} */}
-      <ToastContainer />
     </main>
   );
 };

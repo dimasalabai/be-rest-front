@@ -7,11 +7,9 @@ import {
   selectAuthLoading,
 } from '../../redux/auth/auth-selectors';
 
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
 import styles from './login-page.module.css';
 
+import AuthWrapper from 'shared/components/AuthWrapper/AuthWrapper';
 import Loader from '../../shared/components/Loader/Loader';
 import LoginForm from '../../components/LoginForm/LoginForm';
 
@@ -27,12 +25,12 @@ const LoginPage = () => {
   };
 
   return (
-    <main className={styles.block}>
-      <h1>Login Page</h1>
-      {authLoading && <Loader />}
-      <LoginForm onSubmit={handleLogin} />
-
-      <ToastContainer />
+    <main className={styles.main}>
+      <AuthWrapper title={'Please Log in'}>
+        {authLoading && <Loader />}
+        <LoginForm onSubmit={handleLogin} />
+        {/* {authError && <p>{authError}</p>} */}
+      </AuthWrapper>
     </main>
   );
 };

@@ -23,12 +23,6 @@ const MainMenu = () => {
     </li>
   ));
 
-  return (
-    <header className={styles.header}>
-      <div className="container">
-        <ul className={styles.menu}>{elements}</ul>
-      </div>
-    </header>
-  );
+  return <ul className={styles.menu}>{elements}</ul>;
 };
 export default MainMenu;

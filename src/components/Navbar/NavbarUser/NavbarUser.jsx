@@ -8,6 +8,7 @@ import styles from './navbar-user.module.css';
 
 const NavbarUser = () => {
   const { name } = useSelector(selectUser);
+  console.log('name from state', name);
   const dispatch = useDispatch();
 
   const onLogout = () => dispatch(logout());

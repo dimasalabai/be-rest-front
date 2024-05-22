@@ -1,26 +1,58 @@
 @import-normalize; /* bring in normalize.css styles */
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600&display=swap);
+
+:root {
+  --blue-color: #3c9af1;
+  --blue-alt-color: #6cb7fd;
+  --accent-yellow-color: #efb94f;
+  --accent-yellow-alt-color: #ffcb63;
+  --main-white-color: #f9f9f9;
+  --main--dark--color: #4f4f4f;
+
+  --bg-transition: background-color 0.3s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: Montserrat;
+  background-color: #f9f9f9;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+
+#root {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#root > main {
+  flex: 1 1 auto;
+}
+a {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: none;
+  -webkit-text-fill-color: #4f4f4f;
+  background-color: #4f4f4f;
 }
 
 .header {
   padding: 30px 0;
-  background-color: #2d3250;
 }
 .container {
   margin: auto;
-  max-width: 1420px;
+  max-width: 1350px;
   padding: 0 10px;
 }
 
@@ -29,4 +61,5 @@ code {
 *::before {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }

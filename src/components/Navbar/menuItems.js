@@ -4,14 +4,20 @@ const menuItems = [
   {
     id: nanoid(),
     to: '/',
-    text: 'Home page',
+    text: 'Home',
+    private: false,
+  },
+  {
+    id: nanoid(),
+    to: '/about',
+    text: 'About us',
     private: false,
   },
   {
     id: nanoid(),
     to: '/contacts',
     text: 'Contacts',
-    private: true,
+    private: false,
   },
 ];
 

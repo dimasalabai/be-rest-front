@@ -25,6 +25,7 @@ const LoginForm = ({ onSubmit }) => {
   const handleSubmit = e => {
     e.preventDefault();
     onSubmit({ ...state });
+
     resetForm();
   };
 
@@ -34,31 +35,37 @@ const LoginForm = ({ onSubmit }) => {
   const { email, password } = state;
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className={styles.block}>
-        <label htmlFor={emailId}>Email:</label>
-        <input
-          value={email}
-          onChange={handleChange}
-          type="email"
-          name="email"
-          id={emailId}
-          required
-        />
-      </div>
-      <div className={styles.block}>
-        <label htmlFor={passwordId}>Password:</label>
-        <input
-          value={password}
-          onChange={handleChange}
-          type="password"
-          name="password"
-          id={passwordId}
-          required
-        />
-      </div>
-      <button type="submit">Login</button>
-    </form>
+    <>
+      <form onSubmit={handleSubmit}>
+        <div className={styles.block}>
+          <input
+            className={styles.input}
+            value={email}
+            onChange={handleChange}
+            type="email"
+            name="email"
+            id={emailId}
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div className={styles.block}>
+          <input
+            className={styles.input}
+            value={password}
+            onChange={handleChange}
+            type="password"
+            name="password"
+            id={passwordId}
+            placeholder="Confirm a password"
+            required
+          />
+        </div>
+        <button type="submit" className={styles.btnLogin}>
+          Login
+        </button>
+      </form>
+    </>
   );
 };
 export default LoginForm;

@@ -14,8 +14,8 @@ export const App = () => {
   }, [dispatch]);
 
   return (
-    <div className="app">
+    <>
       <AppRoutes />
-    </div>
+    </>
   );
 };

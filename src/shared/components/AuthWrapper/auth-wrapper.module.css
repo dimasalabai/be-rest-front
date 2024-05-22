@@ -1,0 +1,13 @@
+.title {
+  font-size: 28px;
+  color: var(--main--dark--color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.wrapper {
+  max-width: 424px;
+  padding: 40px;
+  margin: 0 auto;
+  background-color: var(--main--dark--color);
+  border-radius: 8px;
+}

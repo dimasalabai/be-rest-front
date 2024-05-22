@@ -2,6 +2,8 @@ import PhoneBookForm from '../../components/PhoneBook/PhoneBookForm/PhoneBookFor
 import Filter from '../../components/PhoneBook/Contacts/Filter/Filter';
 import Contacts from '../../components/PhoneBook/Contacts/Contacts';
 
+import 'react-toastify/dist/ReactToastify.css';
+
 import styles from './phone-book-page.module.css';
 
 const PhoneBookPage = () => {

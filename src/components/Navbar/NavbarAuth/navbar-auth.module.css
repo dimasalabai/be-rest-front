@@ -1,8 +1,17 @@
 .block {
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: aliceblue;
+  gap: 15px;
+  color: var(--main--dark--color);
+}
+
+.link {
+  padding: 11px 24px;
+  border-radius: 10px;
+  background-color: var(--accent-yellow-color);
+  border: none;
+  font-weight: 500;
+  transition: var(--bg-transition);
 }
 
 .link {
@@ -10,11 +19,17 @@
   font-size: 18px;
   color: inherit;
 }
+
+.linkBlue {
+  background-color: var(--blue-color);
+}
 .link:hover {
-  color: #f6b17a;
+  background-color: var(--accent-yellow-alt-color);
+}
+.linkBlue:hover {
+  background-color: var(--blue-alt-color);
 }
 
 .link:global(.active) {
-  color: #f6b17a;
-  font-weight: bold;
+  font-weight: 600;
 }
