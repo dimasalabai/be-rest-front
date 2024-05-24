@@ -1,4 +1,107 @@
 .footer {
-  height: 425px;
+  padding-top: 40px;
+
   background-color: #efba4f80;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.logoBlock {
+  max-width: 370px;
+  font-weight: 700;
+  font-family: Inter;
+
+  line-height: 1.1;
+  color: var(--main--dark--color);
+}
+.logo {
+  font-size: 48px;
+  letter-spacing: -2px;
+  margin-bottom: 25px;
+}
+
+.logo span {
+  color: var(--blue-color);
+}
+.logoText {
+  font-size: 24px;
+  letter-spacing: -1px;
+}
+.getInTouch {
+  margin-bottom: 40px;
+}
+.titleContact {
+  font-weight: 500;
+  font-size: 36px;
+  color: var(--blue-color);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.getInTouchList {
+  display: flex;
+  gap: 40px;
+}
+.getInTouchItem {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.wrapIcon {
+  padding: 16px;
+  background-color: #3b99f166;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.getInTouchIcon {
+  fill: var(--blue-color);
+}
+
+.getInTouchTitle {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Inter;
+  color: var(--main--dark--color);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.getInTouchText {
+  font-size: 14px;
+  font-family: Inter;
+  color: #656d72;
+  line-height: 171.428571%; /* 24/14 */
+}
+
+.socialMediaList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.socialMediaIcon {
+  fill: #3c9af166;
+  stroke: var(--blue-color);
+  transition: all 0.3s ease;
+}
+.socialMediaIcon:hover {
+  fill: #3c9af1c7;
+  stroke: #1f8aeec7;
+}
+
+.bottomFooter {
+  border-top: 1px solid #4f4f4f33;
+  padding-top: 29px;
+  padding-bottom: 20px;
+}
+.bottomText {
+  font-size: 14px;
+  font-family: Inter;
+  color: #656d724d;
+  text-align: center;
 }

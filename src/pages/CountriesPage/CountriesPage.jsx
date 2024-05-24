@@ -4,9 +4,9 @@ import Contacts from '../../components/PhoneBook/Contacts/Contacts';
 
 import 'react-toastify/dist/ReactToastify.css';
 
-import styles from './phone-book-page.module.css';
+import styles from './countries-page.module.css';
 
-const PhoneBookPage = () => {
+const CountriesPage = () => {
   return (
     <div className={styles.wrapper}>
       <h2>Phonebook</h2>
@@ -18,4 +18,4 @@ const PhoneBookPage = () => {
   );
 };
 
-export default PhoneBookPage;
+export default CountriesPage;

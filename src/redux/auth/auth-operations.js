@@ -5,6 +5,7 @@ import {
   currentRequest,
   logoutRequest,
 } from 'api/auth-api';
+import { Notify } from 'notiflix';
 
 import { toast } from 'react-toastify';
 
@@ -13,7 +14,7 @@ export const signup = createAsyncThunk(
   async (body, { rejectWithValue }) => {
     try {
       const data = await signUpRequest(body);
-      // toast.success('Success!', { position: 'top-center' }); Перекидає на іншу сторінку, тому не потрібно
+      Notify.success('Success registration');
       return data;
     } catch (error) {
       toast.error(error.response.data.message, { position: 'top-center' });
@@ -28,10 +29,10 @@ export const login = createAsyncThunk(
   async (body, { rejectWithValue }) => {
     try {
       const data = await loginRequest(body);
-      // toast.success('Success!', { position: 'top-center' }); Перекидає на іншу сторінку, тому не потрібно
+      Notify.success('Success login');
       return data;
     } catch (error) {
-      toast.error('Incorrect email or password', { position: 'top-center' });
+      Notify.failure(error.response.data.message);
 
       return rejectWithValue(error.response.data.message);
     }
@@ -46,7 +47,7 @@ export const current = createAsyncThunk(
       const data = await currentRequest(auth.token);
       return data;
     } catch (error) {
-      toast.error(error.response.data.message, { position: 'top-center' });
+      Notify.failure(error.response.data.message);
       return rejectWithValue(error.response.data.message);
     }
   },
@@ -67,7 +68,7 @@ export const logout = createAsyncThunk(
       const data = await logoutRequest();
       return data;
     } catch (error) {
-      toast.error(error.response.data.message, { position: 'top-center' });
+      Notify.failure(error.response.data.message);
       return rejectWithValue(error.response.data.message);
     }
   }
