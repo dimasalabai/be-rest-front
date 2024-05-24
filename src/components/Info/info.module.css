@@ -1,0 +1,69 @@
+.info {
+  padding: 64px 0 52px 0;
+}
+
+.title {
+  font-size: 36px;
+  color: var(--main--dark--color);
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.cerdsContainer {
+  display: flex;
+  gap: 45px;
+}
+
+.cardItem {
+  background-color: #3c9af166;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 33.33%;
+}
+
+.cardImage {
+  max-width: 100%;
+  max-height: 170px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.cardImage img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-15%);
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.cardText {
+  color: var(--main--dark--color);
+  text-align: justify;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
+
+.cardButton {
+  display: block;
+  padding: 11px 26px;
+  max-width: 134px;
+  margin: 0 auto;
+
+  color: var(--main--dark--color);
+  background-color: var(--accent-yellow-color);
+  border-radius: 10px;
+  transition: var(--bg-transition);
+}
+
+.cardButton:hover {
+  background-color: var(--accent-yellow-alt-color);
+}

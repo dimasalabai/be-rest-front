@@ -38,6 +38,7 @@ a {
   text-decoration: none;
 }
 
+textarea:focus,
 input:focus {
   outline: none;
 }
@@ -47,12 +48,17 @@ input:-webkit-autofill {
   background-color: #4f4f4f;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 .header {
   padding: 30px 0;
 }
 .container {
   margin: auto;
-  max-width: 1350px;
+  max-width: 1370px;
   padding: 0 10px;
 }
 
