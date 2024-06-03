@@ -1,7 +1,6 @@
 import { nanoid } from 'nanoid';
 
 import icon from '../../img/icons.svg';
-import instagramIcon from '../../img/instagram.svg';
 
 export const getInTouchList = [
   {
