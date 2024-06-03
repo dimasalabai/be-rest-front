@@ -1,8 +1,8 @@
 import { nanoid } from 'nanoid';
 
-import turkey from '../../img/info/turkey.jpg';
-import coffee from '../../img/info/coffee.jpg';
-import hotel from '../../img/info/hotel.jpg';
+import turkey from '../../../img/info/turkey.jpg';
+import coffee from '../../../img/info/coffee.jpg';
+import hotel from '../../../img/info/hotel.jpg';
 
 const cardItems = [
   {

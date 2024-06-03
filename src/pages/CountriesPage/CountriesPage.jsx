@@ -1,20 +1,12 @@
-import PhoneBookForm from '../../components/PhoneBook/PhoneBookForm/PhoneBookForm';
-import Filter from '../../components/PhoneBook/Contacts/Filter/Filter';
-import Contacts from '../../components/PhoneBook/Contacts/Contacts';
+// import styles from './countries-page.module.css';
 
-import 'react-toastify/dist/ReactToastify.css';
-
-import styles from './countries-page.module.css';
+import Popular from 'components/Private/Popular/Popular';
 
 const CountriesPage = () => {
   return (
-    <div className={styles.wrapper}>
-      <h2>Phonebook</h2>
-      <PhoneBookForm />
-      <h2>Contacts</h2>
-      <Filter />
-      <Contacts />
-    </div>
+    <main className="countries">
+      <Popular />
+    </main>
   );
 };
 

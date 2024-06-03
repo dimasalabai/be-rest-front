@@ -8,14 +8,17 @@ import styles from './navbar-user.module.css';
 
 const NavbarUser = () => {
   const { name } = useSelector(selectUser);
-  console.log('name from state', name);
+
   const dispatch = useDispatch();
 
   const onLogout = () => dispatch(logout());
 
   return (
     <div className={styles.block}>
-      {name} <button onClick={onLogout}>Log out</button>
+      <p className={styles.name}>{name}</p>
+      <button onClick={onLogout} className={styles.btnLogout}>
+        Log out
+      </button>
     </div>
   );
 };

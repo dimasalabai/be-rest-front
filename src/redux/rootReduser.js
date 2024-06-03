@@ -4,8 +4,8 @@ import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
 import authReducer from './auth/auth-slice';
-import contactsReduser from './contacts/contacts-slice';
-import filterReduser from './filter/filter-slice';
+import countriesReduser from './countries/country-slice';
+import favoritesReduser from './favorites/favorites-slice';
 
 const persistConfig = {
   key: 'root',
@@ -17,8 +17,8 @@ const persistedAuthReduser = persistReducer(persistConfig, authReducer);
 
 const rootReduser = combineReducers({
   auth: persistedAuthReduser,
-  contacts: contactsReduser,
-  filter: filterReduser,
+  countries: countriesReduser,
+  favoriteCountries: favoritesReduser,
 });
 
 export default rootReduser;

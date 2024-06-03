@@ -6,4 +6,5 @@ export const pending = state => {
 export const rejected = (state, { payload }) => {
   state.isLoading = false;
   state.error = payload;
+  console.log(state.error);
 };

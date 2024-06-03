@@ -15,8 +15,8 @@ const menuItems = [
   },
   {
     id: nanoid(),
-    to: '/contacts',
-    text: 'Contacts',
+    to: '/countries',
+    text: 'Countries',
     private: false,
   },
 ];

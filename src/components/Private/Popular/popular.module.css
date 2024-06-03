@@ -1,0 +1,70 @@
+.popular {
+  background-color: #3b99f140;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+.mainTitle {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--main--dark--color);
+  margin-bottom: 26px;
+}
+.coutriesContainer {
+  margin-bottom: 50px;
+}
+
+.coutriesList {
+  display: flex;
+  gap: 30px;
+}
+
+.countryItem {
+  max-width: 298px;
+}
+
+.countryImage {
+  border-radius: 20px;
+  max-width: 298px;
+  max-height: 199px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.countryImage img {
+  width: 100%;
+}
+
+.bottomInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5px;
+}
+
+.countryLocation {
+  display: flex;
+  align-items: center;
+}
+.countryLocationIcon {
+  fill: var(--blue-color);
+}
+.countryName {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main--dark--color);
+}
+.wrapLike {
+  display: flex;
+  align-items: center;
+}
+.likeInput {
+  display: none;
+}
+.likeIcon {
+  fill: var(--blue-color);
+}
+
+.liked {
+  fill: hsla(4, 87%, 59%, 0.6);
+  filter: drop-shadow(0px 1px 4px #ff0000ab);
+}

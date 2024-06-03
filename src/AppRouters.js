@@ -7,7 +7,7 @@ import PrivateRoute from 'components/PrivateRoute/PrivateRoute';
 import PublicRoute from 'components/PublicRoute/PublicRoute';
 
 const HomePage = lazy(() => import('pages/HomePage/HomePage'));
-const PhoneBookPage = lazy(() => import('pages/CountriesPage/CountriesPage'));
+const CountriesPage = lazy(() => import('pages/CountriesPage/CountriesPage'));
 const RegisterPage = lazy(() => import('pages/RegisterPage/RegisterPage'));
 const LoginPage = lazy(() => import('pages/LoginPage/LoginPage'));
 const NotFoundPage = lazy(() => import('pages/NotFoundPage/NotFoundPage'));
@@ -22,7 +22,7 @@ const AppRoutes = () => {
           <Route path="login" element={<LoginPage />} />
         </Route>
         <Route element={<PrivateRoute />}>
-          <Route path="contacts" element={<PhoneBookPage />} />
+          <Route path="countries" element={<CountriesPage />} />
         </Route>
         <Route path="*" element={<NotFoundPage />} />
       </Route>

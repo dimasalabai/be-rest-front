@@ -1,5 +1,5 @@
 import styles from './hero.module.css';
-import circlesImages from '../../img/main-img.png';
+import circlesImages from '../../../img/main-img.png';
 
 import { NavLink } from 'react-router-dom';
 
